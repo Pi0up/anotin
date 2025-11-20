@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Test pour annotator.js - contenus variés et navigation</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; padding: 32px; line-height: 1.6; }
+    header { margin-bottom: 24px; }
+    h1 { font-size: 2em; margin-bottom: 0.25em; }
+    section { margin: 1.5em 0; padding: 0.5em; border: 1px solid #eee; border-radius: 6px; background: #f9f9f9; }
+    .panel-scroll { height: 180px; overflow: auto; border: 1px solid #ddd; padding: 8px; border-radius: 6px; background: #fff; margin-bottom: 12px; }
+    .panel-scroll h3 { margin: 0 0 6px 0; font-size: 14px; color: #333; }
+    pre { background: #333; color: #fff; padding: 8px; border-radius: 6px; overflow: auto; }
+    img { max-width: 100%; height: auto; display: block; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Page de test pour annotator.js - contenus variés</h1>
+    <p>Tester l'enregistrement, le défilement dans des panneaux et la navigation entre pages.</p>
+  </header>
+
+  <section>
+    <h2>Panneau A (scrollable)</h2>
+    <div class="panel-scroll" aria-label="Panel A">
+      <p>Contenu initial dense pour activer le défilement dans ce panneau.</p>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+        <li>Item 11</li>
+        <li>Item 12</li>
+        <li>Item 13</li>
+        <li>Item 14</li>
+        <li>Item 15</li>
+        <li>Item 16</li>
+        <li>Item 17</li>
+        <li>Item 18</li>
+        <li>Item 19</li>
+        <li>Item 20</li>
+        <li>Item 21</li>
+        <li>Item 22</li>
+        <li>Item 23</li>
+        <li>Item 24</li>
+        <li>Item 25</li>
+        <li>Item 26</li>
+        <li>Item 27</li>
+        <li>Item 28</li>
+        <li>Item 29</li>
+        <li>Item 30</li>
+        <li>Item 31</li>
+        <li>Item 32</li>
+        <li>Item 33</li>
+        <li>Item 34</li>
+        <li>Item 35</li>
+        <li>Item 36</li>
+        <li>Item 37</li>
+        <li>Item 38</li>
+        <li>Item 39</li>
+        <li>Item 40</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Panneau B (scrollable)</h2>
+    <div class="panel-scroll" aria-label="Panel B">
+      <p>Autre panneau avec contenu différent pour tester le défilement.</p>
+      <p>Contenu additionnel pour activer le défilement vertical.</p>
+      <p>Encore plus de contenu pour permettre le scroll.</p>
+      <ul>
+        <li>Bloc A</li>
+        <li>Bloc B</li>
+        <li>Bloc C</li>
+        <li>Bloc D</li>
+        <li>Bloc E</li>
+        <li>Bloc F</li>
+        <li>Bloc G</li>
+        <li>Bloc H</li>
+        <li>Bloc I</li>
+        <li>Bloc J</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="types">
+    <h2>Types de contenu</h2>
+    <p>Texte, bloc de code et image.</p>
+    <pre><code>const x = 42;
+function greet(name) {
+  return 'Hello, ' + name;
+}</code></pre>
+    <img src="https://via.placeholder.com/320x180.png?text=Exemple+image" alt="Exemple image" />
+  </section>
+
+  <section id="navigation">
+    <h2>Navigation</h2>
+    <p>Accédez à une page secondaire pour tester la navigation.</p>
+    <a href="second.html" target="_blank" rel="noopener">Ouvrir la page secondaire</a>
+  </section>
+
+  <script src="../annotator.js"></script>
+</body>
+</html>
